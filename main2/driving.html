@@ -552,7 +552,7 @@
                 .sort(([, dataA], [, dataB]) => dataB.count - dataA.count);
             topGamesList.innerHTML = '';
             if (sortedGames.length === 0) {
-                topGamesList.innerHTML = '<li class="text-slate-500 list-none">暂无点击记录，快去玩游戏吧！</li>';
+                topGamesList.innerHTML = '<li class="text-slate-500 list-none">No click records yet. Go play a game!</li>';
             } else {
                 const rankColors = ['text-red-700', 'text-red-500', 'text-red-400'];
                 sortedGames.slice(0, 3).forEach(([name, data], index) => {
