@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameKids.net</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a0b2e 0%, #0d1b2a 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            padding: 20px;
+        }
+        
+        .link-container {
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .game-link {
+            font-size: 2.5rem;
+            color: #6495ed;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            padding: 15px 30px;
+            border: 2px solid rgba(100, 149, 237, 0.3);
+            border-radius: 12px;
+            background: rgba(15, 23, 42, 0.7);
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .game-link:hover {
+            color: #ffcc00;
+            border-color: #ffcc00;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .game-link {
+                font-size: 2rem;
+                padding: 12px 24px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .game-link {
+                font-size: 1.7rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="link-container">
+        <a href="https://www.crazygames.com" class="game-link" target="_blank">
+            https://www.crazygames.com
+        </a>
+    </div>
+</body>
+</html>
